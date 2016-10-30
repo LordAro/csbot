@@ -5,10 +5,10 @@ from csbot.test import BotTestCase, read_fixture_file
 class TestExam(BotTestCase):
     CONFIG = """\
     [@bot]
-    plugins = auth usertrack mongodb exam
+    plugins = usertrack auth mongodb exam
     """
 
-    PLUGINS = ['auth', 'usertrack', 'mongodb', 'exam']
+    PLUGINS = ['usertrack', 'auth', 'mongodb', 'exam']
 
     @classmethod
     def setUpClass(cls):
